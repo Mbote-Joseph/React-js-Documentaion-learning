@@ -2,10 +2,11 @@ import React from "react";
 import logo from "./../logo.svg";
 
 function Intro() {
+  const heading = <h1>React Library</h1>;
   return (
     <div>
       <header className="App-header">
-        <h1>React Library</h1>
+        {heading}
         <img src={logo} className="App-logo" alt="logo" />
         For Easy understanding Use this
         <a
