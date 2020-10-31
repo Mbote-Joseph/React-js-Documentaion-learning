@@ -25,9 +25,17 @@ class Logincontrol extends Component {
     const isLoggedIn = this.state.loggedIn;
     let button;
     if (isLoggedIn) {
-      return <button onClick={this.handleLogout}>Log In</button>;
+      return (
+        <button className="btn btn-danger" onClick={this.handleLogout}>
+          Log In
+        </button>
+      );
     }
-    return <button onClick={this.handleLogin}>Log out</button>;
+    return (
+      <button className="btn btn-primary" onClick={this.handleLogin}>
+        Log out
+      </button>
+    );
   }
 }
 

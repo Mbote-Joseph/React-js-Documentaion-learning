@@ -3,6 +3,7 @@ import Clock from "./Clock";
 import Toggle from "./Toggle";
 import Greetings from "./Greetings";
 import Logincontrol from "./Logincontrol";
+import Form from "./Form";
 
 function Jsx() {
   function nameFormmater(user) {
@@ -18,11 +19,19 @@ function Jsx() {
   const result = <h3>Greetings from {nameFormmater(user)} </h3>;
   return (
     <div className="App-header">
-      {result}
-      <Clock />
-      <Toggle />
-      <Greetings isLoggedIn={true} />
-      <Logincontrol />
+      <div className="row">
+        <div className="col-9">
+          {result}
+
+          <Toggle />
+          <Greetings isLoggedIn={true} />
+          <Logincontrol />
+          <Form />
+        </div>
+        <div className="col-3">
+          <Clock />
+        </div>
+      </div>
     </div>
   );
 }

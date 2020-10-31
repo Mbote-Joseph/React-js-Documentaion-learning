@@ -1,5 +1,5 @@
 .App {
-  /* text-align: center; */
+  text-align: center;
 }
 
 .App-logo {
@@ -19,11 +19,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.row {
+  background-color: #282c34;
+}
 .App-link {
   color: #61dafb;
 }
@@ -39,6 +41,11 @@
 button {
   height: 70px;
   width: 120px;
-  background-color: #f7f7f7;
-  border-radius: 40%;
+}
+form {
+  margin: 5%;
+}
+.clock {
+  align-items: right;
+  justify-content: right;
 }

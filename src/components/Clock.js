@@ -23,8 +23,10 @@ class Clock extends Component {
   render() {
     return (
       <div>
-        <h1>Clock Component</h1>
-        <h2>The time now is : {this.state.date.toLocaleTimeString()} </h2>
+        <h1>Clock:</h1>
+        <button className="btn btn-primary">
+          <h3> {this.state.date.toLocaleTimeString()}</h3>
+        </button>
       </div>
     );
   }

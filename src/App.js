@@ -6,8 +6,14 @@ import Jsx from "./components/Jsx";
 function App() {
   return (
     <div className="App">
-      <Intro />
-      <Jsx />
+      <div className="row">
+        <div className="col-3">
+          <Intro />
+        </div>
+        <div className="col-9">
+          <Jsx />
+        </div>
+      </div>
     </div>
   );
 }
